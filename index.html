@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Healthier Motus - health food for health peoples</title>
+    <title> PiôVeg </title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 
-    <nav class="navbar">
+    <div id="preloader">
+        <div class="inner">
+            <div class="balls">
+                <div></div>
+                <div></div>
+                <div></div>                    
+            </div>
+          </div>
+      </div>
+
+    <nav id="navbar">
         <div class="navbar-container container">
             <input type="checkbox" name="#" id="#">
             <div class="hamburger-lines">
@@ -22,66 +33,68 @@
             </div>
             <ul class="menu-items">
                 <li><a href="#home"> Home </a></li>
-                <li><a href="#about"> About </a></li>
-                <li><a href="#food"> Category </a></li>
+                <li><a href="#about"> Sobre </a></li>
+                <li><a href="#food"> Tipos </a></li>
                 <li><a href="#food-menu"> Menu </a></li>
-                <li><a href="#testimonials"> Testimonial </a></li>
-                <li><a href="#contact"> Contact </a></li>
+                <li><a href="#testimonials"> Relatos </a></li>
+                <li><a href="#contact"> Contato </a></li>
             </ul>
-            <h1 class="logo"> HM </h1>
+            <h1 class="logo"> 
+                PV
+            </h1>
         </div>
     </nav>
 
     <section class="showcase-area" id="showcase">
         <div class="showcase-container">
-            <h1 class="main-tittle" id="home"> Eat Right Food </h1>
-            <p> Eat Healthy, it is good for our health</p>
-            <a href="#food-menu" class="btn btn-primary"> Menu </a>
+            <h1 class="main-tittle" id="home"> Seja Consciente </h1>
+            <p> Compre com PiôVeg </p>
+            <a href="#food-menu" id="btn-primary" class="btn"> Menu </a>
         </div>
     </section>
 
     <section id="about">
         <div class="about-wrapper container">
             <div class="about-text">
-                <p class="small"> About Us </p>
-                <h2> We've been, making healthy food last for 10 years </h2>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptatibus accusamus ipsum provident harum assumenda blanditiis obcaecati, ipsam culpa fugiat enim, molestiae consequatur cupiditate corrupti, illum atque at rerum velit? </p>
+                <p class="small"> Sobre nós </p>
+                <h2> Nosso maior objetivo é fazer você feliz e saciado!  </h2>
+                <p>Somos um grupo de jovens empreendedoras, que através do nosso site propomos a venda de comidas veganas, vegetarianas e ovolactovegetarianas com o propósito de ajudar pessoas com a alimentação consciente a desfrutar de refeições deliciosas em seu cardápio, diariamente. </p>
             </div>
             <div class="about-img">
-                <img src="Assets/about-photo.jpg" alt="food">
+                <img src="Assets/Imgs/About-photo.jpg" alt="food">
             </div>
         </div>
     </section>
 
     <section id="food">
-        <h2> Types of food </h2>
+        <h2> Tipos de Comida </h2>
         <div class="food-container container">
             <div class="food-type fruite">
                 <div class="img-container">
-                    <img src="Assets/food1.jpg" alt="error">
+                    <img src="Assets/Imgs/food1.jpg" alt="error">
                     <div class="img-content">
-                        <h3> Fruit </h3>
-                        <a href="https://en.wikipedia.org/wiki/Fruit" class="btn btn-primary" target="blank"> Learn more </a>
+                        <h3> Ovolactovegetariana </h3>
+                        <a href="https://www.ecycle.com.br/ovolactovegetarianismo/" id="btn-primary" class="btn" target="blank"> Saiba mais </a>
                     </div>
                 </div>
             </div>
 
             <div class="food-type vegetable">
                 <div class="img-container">
-                    <img src="Assets/food2.jpg" alt="error">
+                    <img src="Assets/Imgs/food2.jpg" alt="error">
                     <div class="img-content">
-                        <h3> Vegetable </h3>
-                        <a href="https://en.wikipedia.org/wiki/Vegetable" class="btn btn-primary" target="blank"> Learn more</a>
+                        <h3> Vegetariana </h3>
+                        <a href="https://www.ecycle.com.br/vegetarianismo/" id="btn-primary" class="btn" target="blank"> Saiba mais</a>
                     </div>
                 </div>
             </div>
 
             <div class="food-type grin">
                 <div class="img-container">
-                    <img src="Assets/food3.jpg" alt="error">
+                    <img src="Assets/Imgs/food3.jpg" alt="error">
                     <div class="img-content">
-                        <h3> Grain </h3>
-                        <a href="https://en.wikipedia.org/wiki/Grain" class="btn btn-primary" target="blank"> Learn more</a>
+                        <h3> Vegana </h3>
+                        <a href="https://www.ecycle.com.br/dia-mundial-do-veganismo/" id="btn-primary" class="btn" target="blank"> Saiba mais</a>
                     </div>
                 </div>
             </div>
@@ -89,90 +102,94 @@
     </section>
 
     <section id="food-menu">
-        <h2 class="food-menu-heading"> Food Menu </h2>
+        <h2 class="food-menu-heading"> Menu </h2>
         <div class="food-menu-container container">
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu1.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu1.jpg" alt="error">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-titile"> Food Menu Item 1 </h2>
-                    <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                        quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                    <h2 class="food-titile"> Macarrão ao molho branco </h2>
+                    <p> Macarrão com brócolis e molho branco, feito com inhame e couve-flor. 
+                        Uma ótima opção para almoço e/ou jantar
+                        .</p>
+                        <p class="food-price">R$ 250</p>
                 </div>
             </div>
 
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu2.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu2.jpg" alt="error">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-titile"> Food Menu Item 2 </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                        quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                    <h2 class="food-titile"> Quibe </h2>
+                    <p> Quibe de abóbora recheado com creme de feijão branco. Uma excelente entrada para sua refeição</p>
+                        <p class="food-price">R$ 250</p>
                 </div>
             </div>
 
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu3.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu3.jpg" alt="error">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-titile"> Food Menu Item 3 </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                        quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                    <h2 class="food-titile"> Curry de cogumelos e legumes </h2>
+                    <p>Diversidade de legumes cozidos ao tempero Curry com lascas de nozes.
+                        Uma opção leve e saborosa para a sua refeição. Nosso Curry possui variedade de leguminosas na receita, para que você obtenha sua porção diária de vegetais e aproveite o apetitoso sabor do prato.
+                        </p>
+                        <p class="food-price"> R$ 250</p>
                 </div>
             </div>
 
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu4.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu4.jpg" alt="error">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-titile"> Food Menu Item 4 </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                        quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                    <h2 class="food-titile"> Lasanha de Abobrinha
+                    </h2>
+                    <p> Massa fina a base de leite vegetal, abobrinha fatiada e molho de tomate caseiro.
+                        A lasanha de abobrinha é uma ótima opção para quem quer uma alimentação saudável, prática e saborosa. Nossa receita garante leveza e um mix de sabores únicos, até quem não gosta de abobrinha vai amar esse prato.
+                        </p>
+                        <p class="food-price"> R$ 250</p>
                 </div>
             </div>
 
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu5.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu5.jpg" alt="error">
                 </div>
                 <div class="food-description">
-                    <h2 class="food-titile"> Food Menu Item 5 </h2>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
-                        quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                    <h2 class="food-titile"> Salada de frutas </h2>
+                    <p> Frutas sortidas com variação de sabores envolvidas em leite condensado vegetal.
+                        Salada de fruta é uma delícia: no café da manhã, no lanche da tarde, não importa a hora, uma salada de frutas gostosa como essa cabe até como sobremesa!
+                        .</p>
+                        <p class="food-price"> R$ 250</p>
                 </div>
             </div>
 
             <div class="food-menu-item">
                 <div class="food-img">
-                    <img src="Assets/food-menu6.jpg" alt="error">
+                    <img src="Assets/Imgs/food-menu6.jpg" alt="error">
                 </div>
                 <div class="food-description">
                     <h2 class="food-titile"> Food Menu Item 6 </h2>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
                         quae.</p>
-                        <p class="food-price"> Price: &#8377;250</p>
+                        <p class="food-price"> R$ 250</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="testimonials">
-        <h2 class="testimonial-title"> What Our Costumers Say </h2>
+        <h2 class="testimonial-title"> Oque os nossos clientes falam </h2>
         <div class="testimonial-container container">
 
             <div class="testimonial-box">
                 <div class="customer-detail">
                     <div class="customer-photo">
-                        <img src="Assets/male-photo1.jpg" alt="error">
+                        <img src="Assets/Imgs/male-photo1.jpg" alt="error">
                         <p class="customer-name"> Ross Lee </p>
                     </div>
                 </div>
@@ -192,7 +209,7 @@
             <div class="testimonial-box">
                 <div class="customer-detail">
                     <div class="customer-photo">
-                        <img src="Assets/female-photo1.jpg" alt="error">
+                        <img src="Assets/Imgs/female-photo1.jpg" alt="error">
                         <p class="customer-name"> Amelia Watson </p>
                     </div>
                 </div>
@@ -212,7 +229,7 @@
             <div class="testimonial-box">
                 <div class="customer-detail">
                     <div class="customer-photo">
-                        <img src="Assets/male-photo2.jpg" alt="error">
+                        <img src="Assets/Imgs/male-photo2.jpg" alt="error">
                         <p class="customer-name"> Ben Roy </p>
                     </div>
                 </div>
@@ -235,22 +252,56 @@
     <section id="contact">
         <div class="contact-container container">
             <div class="contact-img">
-                <img src="Assets/restraunt2.jpg" alt="error">
+                <img src="Assets/Imgs/restraunt2.jpg" alt="error">
             </div>
             <div class="form-container">
-                <h2> Contact Us </h2>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="E-mail">
-                <textarea cols="30" rows="6" placeholder="Type Your Message"></textarea>
-                <a href="#" class="btn btn-primary"> Submit </a>
+                <h2> Contate-nos </h2>
+                <input type="text" placeholder="Nome...">
+                <input type="email" placeholder="@gmail.com...">
+                <textarea cols="30" rows="6" placeholder="Digite sua mensagem"></textarea>
+                <a href="#" id="btn-primary" class="btn"> Enviar </a>
             </div>
         </div>
     </section>
 
-    <footer id="footer">
-        <h2> Healthier Motus &copy; all rights reserved </h2>
-    </footer>
+    <footer class="site-footer">  
+        <div class="container">  
+         <div class="row">  
+          <div class="col-sm-12 col-md-6">  
+            <h6 id="sobre"> Sobre </h6>  
+            <p class="text-justify">Somos um grupo de jovens empreendedoras, que através do nosso site propomos a venda de comidas veganas, vegetarianas e ovolactovegetarianas com o propósito de ajudar pessoas com a alimentação consciente a desfrutar de refeições deliciosas em seu cardápio, diariamente. </p>  
+          </div>  
+          <div class="col-6 col-md-3">  
+            <h6> Membros do Grupo</h6>  
+            <ul class="footer-links ">  
+              <li><a href="#"> Ana Clara </a></li>  
+              <li><a href="#"> Sofia Nossat </a></li>  
+              <li><a href="#"> Marina Oliveira </a></li>  
+              <li><a href="#"> Thayná Cena </a></li>  
+            </ul>  
+          </div>  
+          <div class="col-6 col-md-3">  
+            <h6 id="cont"> Informações Adcionais </h6>  
+            <ul class="footer-links">  
+              <li><a href="#about"> Sobre-nos</a></li>  
+              <li><a href="#contact"> Contate-nos</a></li> 
+              <li><a href="#"> FAQ</a></li>   
+            </ul>  
+          </div>  
+         </div>
+          <hr class="small">  
+        </div>  
+        <div class="container">  
+         <div class="row">  
+          <div class="col-md-8 col-sm-6 col-12">  
+            <p class="copyright-text">Copyright © 2022 Todos os Direitos Reservados 
+              <a href="#"><span id="logo"> PiôVeg </span></a>  
+           </p>  
+          </div>
+         </div>
+        </footer> 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="JS/script.js"></script>
 </body>
