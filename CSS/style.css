@@ -119,12 +119,12 @@ animation-iteration-count: infinite;
 /* nav-bar */
 /* desktop mode */
 
-#navbar input[type="checkbox"],
-#navbar .hamburger-lines {
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
     display: none;
 }
 
-#navbar {
+.navbar {
     box-shadow: 0px 5px 10px 0px #aaa;
     position: fixed;
     width: 100%;
@@ -168,9 +168,13 @@ animation-iteration-count: infinite;
 }
 
 .logo {
+    position: relative;
+    top: -.6rem;
     order: 1;
     font-size: 2.3em;
     margin-bottom: .5rem;
+    width: 6rem;
+    height: 3rem;
 }
 
 /* showcase Styling */
