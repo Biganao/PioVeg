@@ -770,6 +770,7 @@ animation-iteration-count: infinite;
     .img-container .btn {
       font-size: 0.7rem;
     }
+  }
   
   @media (orientation: landscape) and (max-height: 500px) {
     .showcase-area {
