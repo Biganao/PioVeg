@@ -770,7 +770,6 @@ animation-iteration-count: infinite;
     .img-container .btn {
       font-size: 0.7rem;
     }
-  }
   
   @media (orientation: landscape) and (max-height: 500px) {
     .showcase-area {
@@ -784,12 +783,10 @@ animation-iteration-count: infinite;
     }  
   }
 
-
   @media (max-width: 767px) {  
     .site-footer {  
-        position: absolute;
-        padding-bottom: 0; 
-        top: 644.7rem; 
+        position: relative;
+        bottom: 0;
     }  
     
     .site-footer .copyright-text,  
